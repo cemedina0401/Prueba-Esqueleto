@@ -1,0 +1,46 @@
+/* Establece reglas generales para todos los elementos en la página */
+* {
+    margin: 0; /* Elimina los espacios exteriores que vienen por defecto */
+    padding: 0; /* Elimina el espacio interno predeterminado */
+    box-sizing: border-box; /* Asegura que el tamaño total incluya bordes y rellenos */
+}
+
+/* Estilos aplicados al contenedor principal del documento */
+body {
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex; /* Usa el sistema de flexbox(facilita la distribución del espacio entre los elementos hijos dentro de un contenedor, 
+    permitiendo que se adapten automáticamente al espacio disponible). para la disposición de los elementos */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura visible de la ventana */
+}
+
+/* Estilos para el estado "inactivo" del esqueleto */
+.esqueletoOff {
+    width: 550px; /* Define el ancho del contenedor del esqueleto */
+    height: 600px; /* Define la altura del contenedor del esqueleto */
+    background-color: rgb(255, 106, 0); /* Establece el color de fondo cuando el esqueleto está quieto */
+    display: flex; /* Utiliza flexbox para organizar los hijos del contenedor */
+    align-items: end; /* Alinea los elementos internos hacia la parte inferior */
+    justify-content: center; /* Centra los elementos internos en el eje horizontal */
+    background-image: url(../img/esqueleto2.png); /* Asigna una imagen de fondo para el estado inactivo */
+}
+
+/* Estilos para el esqueleto cuando está en acción */
+.esqueletoOff.on {
+    background-image: url(../img/esqueleto1.gif); /* Cambia la imagen a una animación cuando está bailando */
+}
+
+/* Estilos para el botón que activa el baile */
+.esqueletoOnOff {
+    width: 100px; /* Ancho fijo del botón */
+    height: 50px; /* Altura fija del botón */
+    background-color: rgb(238, 60, 6); /* Color de fondo del botón que invita a hacer clic */
+    border-radius: 1vh; /* Aplica esquinas redondeadas al botón */
+    border: 0.2rem solid rgb(229, 135, 107); /* Define un borde alrededor del botón */
+    position: fixed; /* Mantiene el botón visible en una posición fija */
+    color: rgb(247, 242, 240); /* Color del texto que aparece en el botón */
+    align-items: center; /* Centra el texto verticalmente dentro del botón */
+    justify-content: center; /* Centra el texto horizontalmente dentro del botón */
+    display: flex; /* Usa flexbox para alinear el contenido del botón */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Tipografía del texto en el botón */
+}

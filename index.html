@@ -1,0 +1,30 @@
+<!-- Indica que este es un documento HTML5 -->
+<!DOCTYPE html> 
+<!-- Comienza la estructura HTML con el idioma español -->
+<html lang="es"> 
+<head> 
+    <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta charset="UTF-8"> 
+    <!-- Configura la vista para adaptarse a diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Nombre que aparecerá en la pestaña del navegador -->
+    <title>baile</title> 
+    <!-- Conexión a la hoja de estilos para el diseño visual -->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <!-- Contenedor principal para la sección del baile -->
+    <div class="Baile"> 
+        <!-- Representa un esqueleto en estado de reposo -->
+        <div id="esqueletoQuieto" class ="esqueletoOff"> 
+            <!-- Botón que activa la acción de bailar al esqueleto-->
+            <div class="esqueletoOnOff" onclick="Bailar()"> 
+                Bailar 
+            </div>
+        </div>
+    </div>
+
+    <!-- Conexión al archivo JavaScript para llamarlo-->
+    <script src="script.js"></script> 
+</body>
+</html>
